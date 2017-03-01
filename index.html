@@ -1,34 +1,46 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="YaMusic test task by t1r1">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Maria Vorobyova">
     <link rel="stylesheet" href ="style.css">
 </head>
 <body>
     <div class="container">
-    <header class="HolyGrail-header">
-        <h1>Тестовое задание для Музыки</h2> <br>
-        <button class="button sign-in" href="#">Войти</button>
-    </header>
-    <div class="HolyGrail-body">
-        <main class="HolyGrail-content">
-             <h2>Тест на переполнение контентом</h2>
-            <button class="button content-button" role="button">Вставить в разметку контент</button>
-            <div class="main-content-test"></div>
-        </main>
-<aside class="HolyGrail-ads">
-    <h2>Тест на переполнение контентом</h2>
-    <button class="button aside-button" role="button">Вставить в разметку контент</button>
-    <div class="aside-content-test"></div>
-    <!--<button class="button aside-button is-hidden" role="button">Очистить контент</button>-->
-  </form>
-</aside>
-  </div>
-  <footer class="HolyGrail-footer">footer</footer>
-  <div class="modal-window is-hidden">
-      <div class="modal-window__content"></div>
-  </div>
-</div>
-<script src="js/data.js" type="application/javascript"></script>
-<script src="js/script.js" type="application/javascript"></script>
+        <header class="HolyGrail-header">
+            <h2>Тестовое задание для Музыки</h2> <br>
+            <button class="button sign-in" href="#">Войти</button>
+        </header>
+        <div class="HolyGrail-body">
+            <main class="HolyGrail-content">
+                <h2>Тест на переполнение контентом</h2>
+                <div class="main-content-test">
+                    <button class="button content-button" role="button" aria-pressed="false">Вставить в разметку контент</button>
+                </div>
+            </main>
+            <aside class="sidebar">
+                <h2>Тест на переполнение контентом</h2>
+                <button class="button aside-button" role="button">Вставить в разметку контент</button>
+                <div class="aside-content-test"></div>
+            </aside>
+        </div>
+        <footer class="HolyGrail-footer">footer</footer>
+        <div class="fade is-hidden"></div>
+    </div>
+    <div class="modal-window is-hidden"></div>
+    <template id="dialog-template">
+        <div class="dialog-content">
+            <button class="button close-dialog" href="#" tabindex="0" role="button" aria-pressed="false">Закрыть окно</button>
+            <button class="button insert-content" href="#" tabindex="0" role="button" aria-pressed="false">Вставить контент</button>
+            <div class="dialog-text"></div>
+        </div>
+    </template>
+    <script src="js/data.js" type="application/javascript"></script>
+    <script src="js/utils.js" type="application/javascript"></script>
+    <script src="js/modal-dialog.js" type="application/javascript"></script>
+    <script src="js/content-manipulation.js" type="application/javascript"></script>
+    <script src="js/script.js" type="application/javascript"></script>
 </body>
 </html>
