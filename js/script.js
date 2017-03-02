@@ -4,14 +4,14 @@
     var container = document.querySelector('.container');
     var sidebar = document.querySelector('.sidebar');
     var sidebarContentDiv = document.querySelector('.aside-content-test');
+    var anchor1 = document.getElementById('1');
     container.addEventListener('scroll', function () {
         var coordinates = sidebarContentDiv.getBoundingClientRect();
         if (coordinates.bottom <= 50) {
             sidebar.classList.add('is-hidden');
-            console.log('Sidebar content is invisible now');
+            window.content.isScrolledIntoView(anchor1); 
         } else {
             sidebar.classList.remove('is-hidden');
-            console.log('Sidebar content is Visible now');
         }
     });
     window.utils.setHeight(container);
