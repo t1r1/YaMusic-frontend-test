@@ -1,7 +1,7 @@
 'use strict';
 
 window.modalDialog = (function () {
-    var signInButton = document.querySelector('.sign-in');
+    var signInButton = document.querySelector('.header__button');
     var popUp = document.querySelector('.modal-window');
     var dialogToClone = document.querySelector('#dialog-template').content.querySelector('.dialog-content');
     var fadeBlock = document.querySelector('.fade');

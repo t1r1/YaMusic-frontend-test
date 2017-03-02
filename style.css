@@ -24,10 +24,9 @@ body {
   top: 0;
 }
 
-.HolyGrail-header {
+.header {
   background-color: #fff;
   position: fixed;
-  /*z-index: 2;*/
   width: 500px;
   display: flex;
   justify-content: space-around;
@@ -35,21 +34,21 @@ body {
   box-sizing: border-box;
 }
 
-.HolyGrail-header h2 {
+.header__title {
   margin: 0;
 }
 
-.HolyGrail-header button {
+.header__button {
   height: 32px;
 }
 
-.HolyGrail-body {
+.wrapper {
   display: flex;
   flex: 1 0 auto;  
   flex-direction: column;
 }
 
-.HolyGrail-content,
+.content,
 .sidebar {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -71,7 +70,7 @@ body {
 }
 
 
-.HolyGrail-footer {
+.footer {
   width: 100%;
   height: 50px;
   border-top: 1px solid #999;
@@ -83,7 +82,7 @@ body {
   position: fixed;
 }
 
-.HolyGrail-header {
+.header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -97,16 +96,16 @@ body {
   .container, .fade {
     width: 100%;
   }
-  .HolyGrail-header {
+  .header {
     width: 100%;
   }
-  .HolyGrail-footer {
+  .footer {
     width: 100%;
   }
-  .HolyGrail-body {
+  .wrapper {
     flex-direction: row;
   }
-  .HolyGrail-content {
+  .content {
     flex: 1;
     padding-left: 20px;
     padding-right: 20px;
@@ -128,10 +127,10 @@ body {
   .container, .fade {
     width: 800px;
   }
-  .HolyGrail-header {
+  .header {
     width: 800px;
   }
-  .HolyGrail-footer {
+  .footer {
     width: 800px;
   }
 }

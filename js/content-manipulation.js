@@ -2,12 +2,11 @@
 
 window.content = (function () {
     var sidebar = document.querySelector('.sidebar');
-    var mainContentParent = document.querySelector('.HolyGrail-content');
+    var mainContentParent = document.querySelector('.content');
     var sidebarContentDiv = document.querySelector('.aside-content-test');
-    var mainContentDiv = document.querySelector('.main-content-test');
+    var mainContentDiv = document.querySelector('.content__test');
     var asideButton = document.querySelector('.aside-button');
-    var anchor1 = document.getElementById('1');
-    var contentButton = document.querySelector('.content-button');
+    var contentButton = document.querySelector('.content__button');
     var insertContent = function (evt) {
         var buttonClicked = evt.currentTarget;
         switch (buttonClicked.parentNode) {
