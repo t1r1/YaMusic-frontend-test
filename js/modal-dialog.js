@@ -18,6 +18,11 @@ window.modalDialog = (function () {
         window.utils.setHeight(fadeBlock);
     };
 
+    var closeDialogAndRemoveFade = function () {
+        popUp.classList.add('is-hidden');
+        fadeBlock.classList.add('is-hidden');
+    };
+
     var insertDialogContent = function () {
         dialogProperties.dialogText.innerText = window.data.popUpContent;
         improvePosition();
@@ -39,6 +44,7 @@ window.modalDialog = (function () {
 
     signInButton.addEventListener('click', showModalDialog);
     dialogProperties.insertButton.addEventListener('click', insertDialogContent);
+    dialogProperties.closeButton.addEventListener('click', closeDialogAndRemoveFade);
     window.addEventListener('resize', fadeBlockResize);
     fadeBlockResize();
 
@@ -46,7 +52,6 @@ window.modalDialog = (function () {
         createDialogFromTemplate: function () {
             popUp.appendChild(dialogProperties.dialog);
             console.log(popUp, 'popUp, createDialogFromTemplate сработала');
-            // showModalDialog(popUp);
         }
     };
 
