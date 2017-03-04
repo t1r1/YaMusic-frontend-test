@@ -14,7 +14,7 @@ window.content = (function () {
                 mainContentDiv.classList.remove('is-hidden');
                 break;
             case sidebar:
-                sidebarContentDiv.innerHTML = window.data.popUpContent;
+                sidebarContentDiv.innerHTML = window.data.sidebarContent;
                 break;
         }; 
     }; 
@@ -25,7 +25,6 @@ window.content = (function () {
             var elemTop = el.getBoundingClientRect().top;
             var elemBottom = el.getBoundingClientRect().bottom;
             var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
-            console.log(el, 'is', isVisible);
             return isVisible;
     }
     };

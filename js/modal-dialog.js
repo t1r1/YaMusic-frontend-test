@@ -32,7 +32,6 @@ window.modalDialog = (function () {
         popUp.classList.remove('is-hidden');
         fadeBlock.classList.remove('is-hidden');
         improvePosition();
-        console.log('showModalDialog сработала');
     };
 
     var improvePosition = function () {
@@ -51,7 +50,6 @@ window.modalDialog = (function () {
     return {
         createDialogFromTemplate: function () {
             popUp.appendChild(dialogProperties.dialog);
-            console.log(popUp, 'popUp, createDialogFromTemplate сработала');
         }
     };
 
